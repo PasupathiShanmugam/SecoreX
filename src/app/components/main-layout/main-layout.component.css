@@ -60,9 +60,11 @@
 }
 
 .mat-sidenav {
-  min-width: 14%;
+  /* min-width: 14%; */
   width: auto;
   background: url("../../../assets/img/leftbg.png");
+  background-repeat-y: no-repeat;
+  background-color: #3361C7;
 }
 
 .mat-sidenav-container {
@@ -244,6 +246,6 @@ mat-form-field {
   height: 70px;
 }
 
-.p20{
+.p20 {
   padding: 20px;
 }
