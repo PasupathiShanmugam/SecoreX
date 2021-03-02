@@ -31,6 +31,7 @@ import { PrinterTemplateComponent } from './modals/printer-template/printer-temp
 import { DispatchedCardsDetailsComponent } from './modals/dispatched-cards-details/dispatched-cards-details.component';
 import {MatDialogModule} from '@angular/material/dialog';
 import { RejectReasonComponent } from './modals/reject-reason/reject-reason.component';
+import { CardPreviewComponent } from './modals/card-preview/card-preview.component';
 
 @NgModule({
   declarations: [
@@ -54,7 +55,8 @@ import { RejectReasonComponent } from './modals/reject-reason/reject-reason.comp
     CompletedQueueComponent,
     PrinterTemplateComponent,
     DispatchedCardsDetailsComponent,
-    RejectReasonComponent
+    RejectReasonComponent,
+    CardPreviewComponent
   ],
   imports: [
     BrowserModule,
