@@ -5,6 +5,9 @@ import { SelectionModel } from '@angular/cdk/collections';
 import { MatTableDataSource } from '@angular/material/table';
 import {PageEvent} from '@angular/material/paginator';
 import { RejectReasonComponent } from 'src/app/modals/reject-reason/reject-reason.component';
+import { IdCardApproveComponent } from 'src/app/modals/id-card-approve/id-card-approve.component';
+import { EmployeePhotoComponent } from 'src/app/modals/employee-photo/employee-photo.component';
+
 import { MatDialog } from '@angular/material/dialog';
 
 
@@ -139,8 +142,23 @@ export class IdCardApprovalComponent implements OnInit {
     'header-row-fifth-group','header-row-sixth-group','header-row-sevent-group']:[]
   }
 
-  openDialog() {
+  openRejectReasonDialog() {
     const dialogRef = this.dialog.open(RejectReasonComponent, { panelClass: 'custom-dialog-container' });
+
+    dialogRef.afterClosed().subscribe(result => {
+      console.log(`Dialog result: ${result}`);
+    });
+  }
+
+  openIdCardApproveDialog() {
+    const dialogRef = this.dialog.open(IdCardApproveComponent, { panelClass: 'custom-dialog-container' });
+
+    dialogRef.afterClosed().subscribe(result => {
+      console.log(`Dialog result: ${result}`);
+    });
+  }
+  openEmployeePhotoDialog(){
+    const dialogRef = this.dialog.open(EmployeePhotoComponent, { panelClass: 'custom-dialog-container' });
 
     dialogRef.afterClosed().subscribe(result => {
       console.log(`Dialog result: ${result}`);

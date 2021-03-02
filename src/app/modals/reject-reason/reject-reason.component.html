@@ -2,7 +2,8 @@
   <span>Reject Reason</span>
   <span class="fill-spacer"></span>
 
-  <button mat-icon-button class="example-icon" aria-label="Example icon-button with share icon" mat-button mat-dialog-close>
+  <button mat-icon-button class="example-icon" aria-label="Example icon-button with share icon" mat-button
+    mat-dialog-close>
     <mat-icon color="warn">cancel</mat-icon>
   </button>
 </mat-toolbar>
@@ -10,7 +11,12 @@
 <div class="body">
 
   <div fxLayout.xs="column" fxLayout="row" fxLayoutAlign="start center" fxLayoutGap="10px">
-    
+    <div fxFlex class="search">
+      <h2>Please select the reason of rejection</h2>
+    </div>
+  </div>
+  <div fxLayout.xs="column" fxLayout="row" fxLayoutAlign="start center" fxLayoutGap="10px">
+
     <div fxFlex class="search">
       <!-- <mat-form-field appearance="outline" style="color:black" class="w-90">
         <input matInput placeholder="Enter Here" />
@@ -29,10 +35,9 @@
     </div>
   </div>
 
-
-  <div class="end mt-4">
-    <div class="search">
-      <button mat-flat-button class="bg-black custom-btn" mat-button mat-dialog-close>Ok</button>
-    </div>
+  <br>
+  <div class="end-row">
+    <button mat-flat-button class="bg-black custom-btn mr-4" mat-button mat-dialog-close>Ok</button>
+    <button mat-stroked-button color="warn" class="br-red custom-btn">Cancel</button>
   </div>
 </div>

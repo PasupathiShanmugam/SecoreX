@@ -3,20 +3,19 @@ import { IdCardApprovalComponent } from 'src/app/components/id-card-approval/id-
 import { MAT_DIALOG_DATA, MatDialogRef } from '@angular/material/dialog';
 
 @Component({
-  selector: 'app-reject-reason',
-  templateUrl: './reject-reason.component.html',
-  styleUrls: ['./reject-reason.component.css']
+  selector: 'app-id-card-approve',
+  templateUrl: './id-card-approve.component.html',
+  styleUrls: ['./id-card-approve.component.css']
 })
-export class RejectReasonComponent implements OnInit {
+export class IdCardApproveComponent implements OnInit {
 
   constructor(
     public dialogRef: MatDialogRef<IdCardApprovalComponent>,
     @Inject(MAT_DIALOG_DATA) public data: any) { }
 
   ngOnInit(): void {
+
   }
-
-
 
   onNoClick(): void {
     this.dialogRef.close();
