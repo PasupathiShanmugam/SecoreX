@@ -33,6 +33,7 @@ import {MatDialogModule} from '@angular/material/dialog';
 import { RejectReasonComponent } from './modals/reject-reason/reject-reason.component';
 import { IdCardApproveComponent } from './modals/id-card-approve/id-card-approve.component';
 import { EmployeePhotoComponent } from './modals/employee-photo/employee-photo.component';
+import { EmployeeDetailsComponent } from './modals/employee-details/employee-details.component';
 
 @NgModule({
   declarations: [
@@ -58,7 +59,8 @@ import { EmployeePhotoComponent } from './modals/employee-photo/employee-photo.c
     DispatchedCardsDetailsComponent,
     RejectReasonComponent,
     IdCardApproveComponent,
-    EmployeePhotoComponent
+    EmployeePhotoComponent,
+    EmployeeDetailsComponent
   ],
   imports: [
     BrowserModule,

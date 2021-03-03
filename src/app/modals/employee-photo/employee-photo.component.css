@@ -12,11 +12,18 @@
   display: flex;
   margin-bottom: 20px;
 }
-.photo{
-    width:50%;
-    padding: 10px;
+
+.photo {
+  width: 36%;
+  padding: 10px;
 }
 
-.mt10{
+.mt10 {
   margin-top: 10px;
+}
+
+.emp_photo {
+  max-width: 200px;
+  max-height: 200px;
+  float: right;
 }

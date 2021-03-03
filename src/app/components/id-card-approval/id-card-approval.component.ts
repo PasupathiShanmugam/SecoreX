@@ -7,6 +7,7 @@ import {PageEvent} from '@angular/material/paginator';
 import { RejectReasonComponent } from 'src/app/modals/reject-reason/reject-reason.component';
 import { IdCardApproveComponent } from 'src/app/modals/id-card-approve/id-card-approve.component';
 import { EmployeePhotoComponent } from 'src/app/modals/employee-photo/employee-photo.component';
+import { EmployeeDetailsComponent } from 'src/app/modals/employee-details/employee-details.component';
 
 import { MatDialog } from '@angular/material/dialog';
 
@@ -159,6 +160,14 @@ export class IdCardApprovalComponent implements OnInit {
   }
   openEmployeePhotoDialog(){
     const dialogRef = this.dialog.open(EmployeePhotoComponent, { panelClass: 'custom-dialog-container' });
+
+    dialogRef.afterClosed().subscribe(result => {
+      console.log(`Dialog result: ${result}`);
+    });
+  }
+
+  openEmployeeDetailsDialog(){
+    const dialogRef = this.dialog.open(EmployeeDetailsComponent, { panelClass: 'custom-dialog-container-mx' });
 
     dialogRef.afterClosed().subscribe(result => {
       console.log(`Dialog result: ${result}`);
