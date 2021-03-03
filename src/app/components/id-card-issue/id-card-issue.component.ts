@@ -5,6 +5,7 @@ import { SelectionModel } from '@angular/cdk/collections';
 import { MatTableDataSource } from '@angular/material/table';
 import { MatDialog } from '@angular/material/dialog';
 import { IdCardIssueDetailComponent } from 'src/app/modals/id-card-issue-detail/id-card-issue-detail.component';
+import { CardPreviewComponent } from 'src/app/modals/card-preview/card-preview.component';
 
 
 const ELEMENT_DATA: any[] = [
@@ -135,6 +136,15 @@ export class IdCardIssueComponent implements OnInit {
 
   openDialog() {
     const dialogRef = this.dialog.open(IdCardIssueDetailComponent, { panelClass: 'custom-dialog-container' });
+
+    dialogRef.afterClosed().subscribe(result => {
+      console.log(`Dialog result: ${result}`);
+    });
+  }
+
+  
+  openPreview() {
+    const dialogRef = this.dialog.open(CardPreviewComponent, { panelClass: 'custom-dialog-container' });
 
     dialogRef.afterClosed().subscribe(result => {
       console.log(`Dialog result: ${result}`);
