@@ -35,6 +35,8 @@ import { IdCardApproveComponent } from './modals/id-card-approve/id-card-approve
 import { EmployeePhotoComponent } from './modals/employee-photo/employee-photo.component';
 import { EmployeeDetailsComponent } from './modals/employee-details/employee-details.component';
 import { CardPreviewComponent } from './modals/card-preview/card-preview.component';
+import { OdcAdminDashboardComponent } from './components/odc-admin/odc-admin-dashboard/odc-admin-dashboard.component';
+import { OdcGrantRevokeAccessComponent } from './components/odc-admin/odc-grant-revoke-access/odc-grant-revoke-access.component';
 
 @NgModule({
   declarations: [
@@ -62,7 +64,9 @@ import { CardPreviewComponent } from './modals/card-preview/card-preview.compone
     IdCardApproveComponent,
     EmployeePhotoComponent,
     EmployeeDetailsComponent,
-    CardPreviewComponent
+    CardPreviewComponent,
+    OdcAdminDashboardComponent,
+    OdcGrantRevokeAccessComponent
   ],
   imports: [
     BrowserModule,

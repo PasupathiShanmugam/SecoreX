@@ -12,6 +12,9 @@ import { IdCardIssueComponent } from './components/id-card-issue/id-card-issue.c
 import { CompletedQueueComponent } from './components/printing-queue/completed-queue/completed-queue.component';
 import { PrintPipelineComponent } from './components/printing-queue/print-pipeline/print-pipeline.component';
 import { PrintStatusComponent } from './components/printing-queue/print-status/print-status.component';
+import { OdcAdminDashboardComponent } from './components/odc-admin/odc-admin-dashboard/odc-admin-dashboard.component';
+import { OdcGrantRevokeAccessComponent } from './components/odc-admin/odc-grant-revoke-access/odc-grant-revoke-access.component';
+
 
 
 const routes: Routes = [
@@ -39,6 +42,8 @@ const routes: Routes = [
       { path: "print-status", component: PrintStatusComponent },
       { path: "print-pipeline", component: PrintPipelineComponent },
       { path: "completed-queue", component: CompletedQueueComponent },
+      { path: "odc-admin-dashboard", component: OdcAdminDashboardComponent },
+      { path : "odc-grant-revoke", component: OdcGrantRevokeAccessComponent}
     ]
   },
 

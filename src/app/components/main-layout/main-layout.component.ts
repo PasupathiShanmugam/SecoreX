@@ -23,31 +23,50 @@ export class MainLayoutComponent implements OnInit, OnDestroy {
   //      cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.`);
 
   private _mobileQueryListener: () => void;
-  breadCrumbs =[]
+  breadCrumbs = []
 
-  constructor(changeDetectorRef: ChangeDetectorRef, media: MediaMatcher, private navService: NavService,location:Location, router: Router) {
+  constructor(changeDetectorRef: ChangeDetectorRef, media: MediaMatcher, private navService: NavService, location: Location, router: Router) {
     this.mobileQuery = media.matchMedia('(max-width: 600px)');
     this._mobileQueryListener = () => changeDetectorRef.detectChanges();
     this.mobileQuery.addListener(this._mobileQueryListener);
     router.events.subscribe(val => {
       let path = location.path()
       console.log(path)
-      if(path == '/home/dashboard'){
-        this.breadCrumbs=[
-          {name:"ID Card Admin",routeLink:'dashboard'},
-          {name:'Dashoard',routeLink:'dashboard'}
-        ]
-        console.log(this.breadCrumbs)
-      }else if(path=='/home/id-card-approval'){
-        this.breadCrumbs=[
-          {name:"ID Card Admin",routeLink:'dashboard'},
-          {name:'ID card Approval',routeLink:'id-card-approval'}
-        ]
-      }else if(path=='/home/dispatch'){
-        this.breadCrumbs=[
-          {name:"ID Card Admin",routeLink:'dashboard'},
-          {name:'Dispatch',routeLink:'dispatch'}
-        ]
+      switch (path) {
+        case '/home/dashboard':
+          this.breadCrumbs = [
+            { name: "ID Card Admin", routeLink: 'dashboard' },
+            { name: 'Dashoard', routeLink: 'dashboard' }
+          ]
+          break;
+        case '/home/id-card-approval':
+          this.breadCrumbs = [
+            { name: "ID Card Admin", routeLink: 'dashboard' },
+            { name: 'ID card Approval', routeLink: 'id-card-approval' }
+          ]
+          break;
+        case '/home/dispatch':
+          this.breadCrumbs = [
+            { name: "ID Card Admin", routeLink: 'dashboard' },
+            { name: 'Dispatch', routeLink: 'dispatch' }
+          ]
+          break;
+
+        case '/home/odc-admin-dashboard':
+          this.breadCrumbs = [
+            { name: "ODC Admin", routeLink: 'odc-admin-dashboard' },
+            { name: 'Dashboard', routeLink: 'odc-admin-dashboard' }
+          ]
+          break;
+
+        case '/home/odc-grant-revoke':
+          this.breadCrumbs = [
+            { name: "ODC Admin", routeLink: 'odc-admin-dashboard' },
+            { name: "Inbox", routeLink: 'odc-grant-revoke' },
+            { name: 'Grant/Revoke Access', routeLink: 'odc-grant-revoke' }
+          ]
+          break;
+
       }
     });
   }
