@@ -15,6 +15,8 @@ import { PrintStatusComponent } from './components/printing-queue/print-status/p
 import { OdcAdminDashboardComponent } from './components/odc-admin/odc-admin-dashboard/odc-admin-dashboard.component';
 import { OdcGrantRevokeAccessComponent } from './components/odc-admin/odc-grant-revoke-access/odc-grant-revoke-access.component';
 import { OdcBulkUploadComponent } from './components/odc-admin/odc-bulk-upload/odc-bulk-upload.component';
+import { OdcReportsComponent } from './components/odc-admin/odc-reports/odc-reports.component';
+
 
 
 
@@ -45,7 +47,9 @@ const routes: Routes = [
       { path: "completed-queue", component: CompletedQueueComponent },
       { path: "odc-admin-dashboard", component: OdcAdminDashboardComponent },
       { path: "odc-grant-revoke", component: OdcGrantRevokeAccessComponent },
-      { path: "odc-bulk-upload", component: OdcBulkUploadComponent }
+      { path: "odc-bulk-upload", component: OdcBulkUploadComponent },
+      { path: "odc-reports", component: OdcReportsComponent }
+
     ]
   },
 

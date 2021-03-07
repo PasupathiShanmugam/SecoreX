@@ -73,6 +73,12 @@ export class MainLayoutComponent implements OnInit, OnDestroy {
             { name: 'Bulk Upload', routeLink: 'odc-bulk-upload' }
           ]
           break;
+          case '/home/odc-reports':
+            this.breadCrumbs = [
+              { name: "ODC Admin", routeLink: 'odc-admin-dashboard' },
+              { name: 'ODC Reports', routeLink: 'odc-reports' }
+            ]
+            break;
       }
     });
   }
