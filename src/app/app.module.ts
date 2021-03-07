@@ -9,6 +9,8 @@ import { HeadNavbarComponent } from './components/head-navbar/head-navbar.compon
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MaterialModule } from './material.module';
 import {MatPaginatorModule} from '@angular/material/paginator';
+import {MatDatepickerModule} from '@angular/material/datepicker';
+
 import { LineChartComponent } from './shared/line-chart/line-chart.component';
 import { ChartsModule } from 'ng2-charts';
 import { BarChartComponent } from './shared/bar-chart/bar-chart.component';
@@ -37,6 +39,8 @@ import { EmployeeDetailsComponent } from './modals/employee-details/employee-det
 import { CardPreviewComponent } from './modals/card-preview/card-preview.component';
 import { OdcAdminDashboardComponent } from './components/odc-admin/odc-admin-dashboard/odc-admin-dashboard.component';
 import { OdcGrantRevokeAccessComponent } from './components/odc-admin/odc-grant-revoke-access/odc-grant-revoke-access.component';
+import { OdcBulkUploadComponent } from './components/odc-admin/odc-bulk-upload/odc-bulk-upload.component';
+import { OdcReportsComponent } from './components/odc-admin/odc-reports/odc-reports.component';
 
 @NgModule({
   declarations: [
@@ -66,7 +70,9 @@ import { OdcGrantRevokeAccessComponent } from './components/odc-admin/odc-grant-
     EmployeeDetailsComponent,
     CardPreviewComponent,
     OdcAdminDashboardComponent,
-    OdcGrantRevokeAccessComponent
+    OdcGrantRevokeAccessComponent,
+    OdcBulkUploadComponent,
+    OdcReportsComponent
   ],
   imports: [
     BrowserModule,
@@ -75,6 +81,7 @@ import { OdcGrantRevokeAccessComponent } from './components/odc-admin/odc-grant-
     MaterialModule,ChartsModule,
     FlexLayoutModule,
     MatPaginatorModule,
+    MatDatepickerModule,
     MatDialogModule
   ],
   providers: [

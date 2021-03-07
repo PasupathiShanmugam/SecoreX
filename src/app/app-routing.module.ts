@@ -14,6 +14,7 @@ import { PrintPipelineComponent } from './components/printing-queue/print-pipeli
 import { PrintStatusComponent } from './components/printing-queue/print-status/print-status.component';
 import { OdcAdminDashboardComponent } from './components/odc-admin/odc-admin-dashboard/odc-admin-dashboard.component';
 import { OdcGrantRevokeAccessComponent } from './components/odc-admin/odc-grant-revoke-access/odc-grant-revoke-access.component';
+import { OdcBulkUploadComponent } from './components/odc-admin/odc-bulk-upload/odc-bulk-upload.component';
 
 
 
@@ -34,8 +35,8 @@ const routes: Routes = [
         path: "",
         component: DashboardComponent
       },
-      { path: "dashboard", component: DashboardComponent},
-      { path: "id-card-approval", component: IdCardApprovalComponent},
+      { path: "dashboard", component: DashboardComponent },
+      { path: "id-card-approval", component: IdCardApprovalComponent },
       { path: "inbox", component: InboxComponent },
       { path: "card-issue", component: IdCardIssueComponent },
       { path: "dispatch", component: DispatchComponent },
@@ -43,7 +44,8 @@ const routes: Routes = [
       { path: "print-pipeline", component: PrintPipelineComponent },
       { path: "completed-queue", component: CompletedQueueComponent },
       { path: "odc-admin-dashboard", component: OdcAdminDashboardComponent },
-      { path : "odc-grant-revoke", component: OdcGrantRevokeAccessComponent}
+      { path: "odc-grant-revoke", component: OdcGrantRevokeAccessComponent },
+      { path: "odc-bulk-upload", component: OdcBulkUploadComponent }
     ]
   },
 

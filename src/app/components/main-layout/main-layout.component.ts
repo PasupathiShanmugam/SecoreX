@@ -66,7 +66,13 @@ export class MainLayoutComponent implements OnInit, OnDestroy {
             { name: 'Grant/Revoke Access', routeLink: 'odc-grant-revoke' }
           ]
           break;
-
+        case '/home/odc-bulk-upload':
+          this.breadCrumbs = [
+            { name: "ODC Admin", routeLink: 'odc-admin-dashboard' },
+            { name: "Inbox", routeLink: 'odc-grant-revoke' },
+            { name: 'Bulk Upload', routeLink: 'odc-bulk-upload' }
+          ]
+          break;
       }
     });
   }

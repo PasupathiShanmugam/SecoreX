@@ -8,19 +8,19 @@ import { MatDialog } from '@angular/material/dialog';
 
 
 const ELEMENT_DATA: any[] = [
-  { empId: 480331, enterprise_profile_details: 'Project A', from_date: '22/10/2020', to_date: '22/10/2020', status: 'Revoke submitted'},
-  { empId: 480331, enterprise_profile_details: 'Project A', from_date: '22/10/2020', to_date: '22/10/2020', status: 'Extended submitted'},
-  { empId: 480331, enterprise_profile_details: 'Project A', from_date: '22/10/2020', to_date: '22/10/2020', status: 'Granted'},
-  { empId: 480331, enterprise_profile_details: 'Project A', from_date: '22/10/2020', to_date: '22/10/2020', status: 'Revoke submitted'},
-  { empId: 480331, enterprise_profile_details: 'Project A', from_date: '22/10/2020', to_date: '22/10/2020', status: 'Revoke submitted'},
+  { empId: 480331, enterprise_profile_details: 'Project A', from_date: '22/10/2020', to_date: '22/10/2020', status: 'Revoke submitted',action:"revoke"},
+  { empId: 480331, enterprise_profile_details: 'Project A', from_date: '22/10/2020', to_date: '22/10/2020', status: 'Extended submitted',action:""},
+  { empId: 480331, enterprise_profile_details: 'Project A', from_date: '22/10/2020', to_date: '22/10/2020', status: 'Granted',action:"cancel"},
+  { empId: 480331, enterprise_profile_details: 'Project A', from_date: '22/10/2020', to_date: '22/10/2020', status: 'Revoke submitted',action:"revoke"},
+  { empId: 480331, enterprise_profile_details: 'Project A', from_date: '22/10/2020', to_date: '22/10/2020', status: 'Revoke submitted',action:""},
 ];
-
 @Component({
-  selector: 'app-odc-grant-revoke-access',
-  templateUrl: './odc-grant-revoke-access.component.html',
-  styleUrls: ['./odc-grant-revoke-access.component.css']
+  selector: 'app-odc-bulk-upload',
+  templateUrl: './odc-bulk-upload.component.html',
+  styleUrls: ['./odc-bulk-upload.component.css']
 })
-export class OdcGrantRevokeAccessComponent implements OnInit {
+export class OdcBulkUploadComponent implements OnInit {
+
   mobileQuery: MediaQueryList;
   opened: boolean = true;
   length = 100;
@@ -53,7 +53,7 @@ export class OdcGrantRevokeAccessComponent implements OnInit {
   closeResult: string;
 
   p: number = 1;
-  displayedColumns: string[] = ['select', 'empId', 'enterprise_profile_details', 'from_date', 'to_date', 'status'];
+  displayedColumns: string[] = ['select', 'empId', 'enterprise_profile_details', 'from_date', 'to_date', 'status','action'];
   addNewColumns: string[] = [];
   filter = false;
   dataSource = new MatTableDataSource<any>(ELEMENT_DATA);
@@ -77,16 +77,11 @@ export class OdcGrantRevokeAccessComponent implements OnInit {
     return `${this.selection.isSelected(row) ? 'deselect' : 'select'} row ${row.position + 1}`;
   }
   
-
-  
-
   addNewFilter() {
     this.filter = !this.filter;
     this.addNewColumns = this.filter ? ['header-row-first-group',
       'header-row-second-group', 'header-row-third-group',
       'header-row-fourth-group',
-      'header-row-fifth-group', 'header-row-sixth-group'] : []
+      'header-row-fifth-group', 'header-row-sixth-group',"header-row-seventh-group"] : []
   }
-
-  
 }

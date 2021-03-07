@@ -20,6 +20,7 @@ export const ROUTES = [
     { path: '#odcAdmin', id: 'odcAdmin', title: 'ODC Admin', icon: 'apps', children: [
       { path: "odc-admin-dashboard",  title: 'Dashboard', icon: 'CI'},
       { path: "odc-grant-revoke",  title: 'Grant/Revoke Access', icon: 'CI'},
+      { path: "odc-bulk-upload",  title: 'Bulk  Upload', icon: 'CI'},
     ]},
 
     // { path: '/odc-admin', title: 'Print Admin', icon: 'dashboard', children: null },
