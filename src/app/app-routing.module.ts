@@ -12,6 +12,8 @@ import { IdCardIssueComponent } from './components/id-card-issue/id-card-issue.c
 import { CompletedQueueComponent } from './components/printing-queue/completed-queue/completed-queue.component';
 import { PrintPipelineComponent } from './components/printing-queue/print-pipeline/print-pipeline.component';
 import { PrintStatusComponent } from './components/printing-queue/print-status/print-status.component';
+import { EmployeeLogsComponent } from './components/super-admin/employee-logs/employee-logs.component';
+import { EmployeeOffBoardComponent } from './components/super-admin/employee-off-board/employee-off-board.component';
 
 
 const routes: Routes = [
@@ -39,6 +41,8 @@ const routes: Routes = [
       { path: "print-status", component: PrintStatusComponent },
       { path: "print-pipeline", component: PrintPipelineComponent },
       { path: "completed-queue", component: CompletedQueueComponent },
+      { path: "employee-logs", component: EmployeeLogsComponent },
+      { path: "employee-off-board", component: EmployeeOffBoardComponent },
     ]
   },
 

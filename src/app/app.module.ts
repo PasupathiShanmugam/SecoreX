@@ -32,6 +32,9 @@ import { DispatchedCardsDetailsComponent } from './modals/dispatched-cards-detai
 import {MatDialogModule} from '@angular/material/dialog';
 import { RejectReasonComponent } from './modals/reject-reason/reject-reason.component';
 import { CardPreviewComponent } from './modals/card-preview/card-preview.component';
+import { EmployeeLogsComponent } from './components/super-admin/employee-logs/employee-logs.component';
+import { EmployeeOffBoardComponent } from './components/super-admin/employee-off-board/employee-off-board.component';
+import { EmployeeOffBoardRelieveComponent } from './components/super-admin/employee-off-board-relieve/employee-off-board-relieve.component';
 
 @NgModule({
   declarations: [
@@ -56,7 +59,10 @@ import { CardPreviewComponent } from './modals/card-preview/card-preview.compone
     PrinterTemplateComponent,
     DispatchedCardsDetailsComponent,
     RejectReasonComponent,
-    CardPreviewComponent
+    CardPreviewComponent,
+    EmployeeLogsComponent,
+    EmployeeOffBoardComponent,
+    EmployeeOffBoardRelieveComponent
   ],
   imports: [
     BrowserModule,

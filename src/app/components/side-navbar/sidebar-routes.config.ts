@@ -20,11 +20,12 @@ export const ROUTES = [
 
     { path: '/odc-admin', title: 'Print Admin', icon: 'dashboard', children: null },
     { path: '/odc-admin', title: 'ODC Admin', icon: 'dashboard', children: null },
-    { path: '/odc-admin', title: 'Super Admin', icon: 'dashboard', children: null },
+    {  path: '#super', id: 'super',title: 'Super Admin', icon: 'dashboard', children:  [
+      { path: "employee-logs",  title: 'Employee Logs', icon: 'CI'},
+      { path: "employee-off-board",title: 'Employee Off oard', icon: 'PD'},
+      { path: "completed-queue",title: 'Completed Queue', icon: 'PD'},
+    ] },
     { path: '/odc-admin', title: 'Settings', icon: 'dashboard', children: null },
     { path: '/odc-admin', title: 'Logout', icon: 'dashboard', children: null },
 
-
-
-   
 ];
