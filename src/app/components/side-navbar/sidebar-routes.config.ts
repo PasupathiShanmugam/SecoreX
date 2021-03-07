@@ -22,8 +22,8 @@ export const ROUTES = [
       { path: "odc-grant-revoke",  title: 'Grant/Revoke Access', icon: 'CI'},
     ]},
 
-    { path: '/odc-admin', title: 'Print Admin', icon: 'dashboard', children: null },
-    { path: '/odc-admin', title: 'ODC Admin', icon: 'dashboard', children: null },
+    // { path: '/odc-admin', title: 'Print Admin', icon: 'dashboard', children: null },
+    // { path: '/odc-admin', title: 'ODC Admin', icon: 'dashboard', children: null },
     { path: '/odc-admin', title: 'Super Admin', icon: 'dashboard', children: null },
     { path: '/odc-admin', title: 'Settings', icon: 'dashboard', children: null },
     { path: '/odc-admin', title: 'Logout', icon: 'dashboard', children: null },
