@@ -41,6 +41,9 @@ import { OdcAdminDashboardComponent } from './components/odc-admin/odc-admin-das
 import { OdcGrantRevokeAccessComponent } from './components/odc-admin/odc-grant-revoke-access/odc-grant-revoke-access.component';
 import { OdcBulkUploadComponent } from './components/odc-admin/odc-bulk-upload/odc-bulk-upload.component';
 import { OdcReportsComponent } from './components/odc-admin/odc-reports/odc-reports.component';
+import { EmployeeLogsComponent } from './components/super-admin/employee-logs/employee-logs.component';
+import { EmployeeOffBoardComponent } from './components/super-admin/employee-off-board/employee-off-board.component';
+import { EmployeeOffBoardRelieveComponent } from './components/super-admin/employee-off-board-relieve/employee-off-board-relieve.component';
 
 @NgModule({
   declarations: [
@@ -72,7 +75,10 @@ import { OdcReportsComponent } from './components/odc-admin/odc-reports/odc-repo
     OdcAdminDashboardComponent,
     OdcGrantRevokeAccessComponent,
     OdcBulkUploadComponent,
-    OdcReportsComponent
+    OdcReportsComponent,
+    EmployeeLogsComponent,
+    EmployeeOffBoardComponent,
+    EmployeeOffBoardRelieveComponent
   ],
   imports: [
     BrowserModule,

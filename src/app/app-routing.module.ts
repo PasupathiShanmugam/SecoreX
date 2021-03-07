@@ -16,8 +16,8 @@ import { OdcAdminDashboardComponent } from './components/odc-admin/odc-admin-das
 import { OdcGrantRevokeAccessComponent } from './components/odc-admin/odc-grant-revoke-access/odc-grant-revoke-access.component';
 import { OdcBulkUploadComponent } from './components/odc-admin/odc-bulk-upload/odc-bulk-upload.component';
 import { OdcReportsComponent } from './components/odc-admin/odc-reports/odc-reports.component';
-
-
+import { EmployeeLogsComponent } from './components/super-admin/employee-logs/employee-logs.component';
+import { EmployeeOffBoardComponent } from './components/super-admin/employee-off-board/employee-off-board.component';
 
 
 const routes: Routes = [
@@ -48,8 +48,9 @@ const routes: Routes = [
       { path: "odc-admin-dashboard", component: OdcAdminDashboardComponent },
       { path: "odc-grant-revoke", component: OdcGrantRevokeAccessComponent },
       { path: "odc-bulk-upload", component: OdcBulkUploadComponent },
-      { path: "odc-reports", component: OdcReportsComponent }
-
+      { path: "odc-reports", component: OdcReportsComponent },
+      { path: "employee-logs", component: EmployeeLogsComponent },
+      { path: "employee-off-board", component: EmployeeOffBoardComponent },
     ]
   },
 
