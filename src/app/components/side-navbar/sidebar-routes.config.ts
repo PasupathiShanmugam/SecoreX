@@ -34,8 +34,9 @@ export const ROUTES = [
   {
     path: '#super', id: 'super', title: 'Super Admin', icon: 'apps', children: [
       { path: "employee-logs", title: 'Employee Logs', icon: 'CI' },
-      { path: "employee-off-board", title: 'Employee Off oard', icon: 'PD' },
+      { path: "employee-off-board", title: 'Employee Off board', icon: 'PD' },
       { path: "completed-queue", title: 'Completed Queue', icon: 'PD' },
+      { path: "employee-id-card-request", title: 'Employee Id Card Request', icon: 'PD' },
     ]
   },
   { path: '/odc-admin', title: 'Settings', icon: 'dashboard', children: null },

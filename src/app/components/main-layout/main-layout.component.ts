@@ -31,7 +31,7 @@ export class MainLayoutComponent implements OnInit, OnDestroy {
     this.mobileQuery.addListener(this._mobileQueryListener);
     router.events.subscribe(val => {
       let path = location.path()
-      console.log(path)
+      //console.log(path)
       switch (path) {
         case '/home/dashboard':
           this.breadCrumbs = [
@@ -79,6 +79,14 @@ export class MainLayoutComponent implements OnInit, OnDestroy {
               { name: 'ODC Reports', routeLink: 'odc-reports' }
             ]
             break;
+
+          case '/home/employee-id-card-request':
+            this.breadCrumbs = [
+              { name: "Super Admin", routeLink: 'employee-logs' },
+              { name: 'Employee ID Card Request', routeLink: 'employee-id-card-request' }
+            ]
+            break;
+            
       }
     });
   }

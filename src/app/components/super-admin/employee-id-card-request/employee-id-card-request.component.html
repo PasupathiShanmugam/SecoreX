@@ -1,0 +1,135 @@
+<div class="layout">
+  <div class="container">
+    <div class="row">
+
+      <div fxLayout.xs="column" fxLayout="row" fxLayoutAlign="center" fxLayoutGap="10px"
+        style="margin-bottom: 0px !important;">
+        <div fxFlex.sm="70%" fxFlex.md="70%" fxFlex.gt-md="70%" class="search">
+          <mat-card class="bg-blue mb-0" style="margin-bottom: 0px !important;">
+            <table>
+              <tr>
+                <td>Company</td>
+                <td>Fidrox Technologies PVt Ltd, India</td>
+              </tr>
+              <tr>
+                <td>Joined Location</td>
+                <td>BEN98743ERT</td>
+              </tr>
+            </table>
+          </mat-card>
+          <br>
+          <mat-card class="bg-grey text-black mb-0" style="margin-bottom: 0px !important;">
+            <table>
+              <tr>
+                <td class="td-lable2">Request For</td>
+                <td>
+                  <mat-form-field appearance="outline" class="w-100">
+                    <!-- <mat-label>Location</mat-label> -->
+                    <mat-select placeholder="Request For">
+                      <mat-option value="option">Card Not Working</mat-option>
+                      <mat-option value="option">Card Damage</mat-option>
+                    </mat-select>
+                  </mat-form-field>
+                </td>
+              </tr>
+              <tr>
+                <td class="td-lable2">Nearest Location</td>
+                <td>
+                  <mat-form-field appearance="outline" class="w-100">
+                    <!-- <mat-label>Location</mat-label> -->
+                    <mat-select placeholder="Nearest Location">
+                      <mat-option value="option">Chennai</mat-option>
+                      <mat-option value="option">Bangalore</mat-option>
+                      <mat-option value="option">Hyderbhad</mat-option>
+                      <mat-option value="option">New Delhi</mat-option>
+                    </mat-select>
+                  </mat-form-field>
+                </td>
+              </tr>
+            </table>
+          </mat-card>
+          <br>
+          <mat-card class="mb-0" style="margin-bottom: 0px !important;">
+            <div class="locate">Select you Nearest Smartcard Issuance Office Location <span class="locate-ht">Bangaloe India</span> </div>
+            <mat-radio-group aria-label="Select an option" layout="row">
+              <mat-radio-button class="pr100" value="1"><span class="template">#12 4th street <br> Jaya Nagar <br> Bangalore</span> </mat-radio-button>
+              <mat-radio-button class="pr100" value="2"><span class="template">#13 4th street <br> Jaya Nagar <br> Bangalore</span></mat-radio-button>
+              <mat-radio-button class="pr100" value="3"><span class="template">#14 4th street <br> Jaya Nagar <br> Bangalore</span></mat-radio-button>
+            </mat-radio-group>
+          </mat-card>
+          <br>
+          <mat-card class="mb-0" style="margin-bottom: 0px !important;">
+            <div class="locate">Details to be Printed On Card</div>
+            <table>
+              <tr>
+                <td class="td-label3">Preferred Name on Smart Card</td>
+                <td>
+                  <mat-radio-group aria-label="Select an option" layout="row">
+                    <mat-radio-button value="1"><span class="template"><span class="fullName">Full Name</span> <br> <span style="font-weight: 500;">Tirupathi</span></span>
+                    </mat-radio-button>
+                    <mat-radio-button value="2"><span class="template">OutLook Display Name <br> <span style="font-weight: 500;">Tirupathi</span> </span>
+                    </mat-radio-button>
+                  </mat-radio-group>
+                </td>
+              </tr>
+              <tr>
+                <td class="td-label3">Emergency Number : <br> In absence of Selection Toll number to be Printed</td>
+                <td>
+                  <mat-radio-group aria-label="Select an option" layout="row">
+                    <mat-radio-button value="1"><span class="template"><span style="margin-right: 68px;">Mobile Number</span></span>
+                    </mat-radio-button>
+                    <mat-radio-button value="2"><span class="template">Landline Number</span>
+                    </mat-radio-button>
+                  </mat-radio-group>
+                </td>
+              </tr>
+            </table>
+          </mat-card>
+          <br>
+          <mat-card class="mb-0" style="margin-bottom: 0px !important;">
+            <div class="locate">Processing Notice</div>
+            <div class="content-para">Fidrox Technologies PVT Ltd,Jaya Nagar, Bangalore -56003.Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. </div>
+            <section class="example-section">
+                <mat-checkbox class="example-margin">By Clicking this box, I acknowledge that I have read the above privacy notice</mat-checkbox>
+              </section>
+          </mat-card>
+          <br>
+          <mat-card class="mb-0" style="margin-bottom: 0px !important;">
+            <section class="example-section">
+                <mat-checkbox class="example-margin">I have Verified My photo,Display Name, Emergency Name and Dispatch Address</mat-checkbox>
+              </section>
+          </mat-card>
+          <div class="btm-div">
+            <button mat-flat-button class="bg-black custom-btn">Apply</button>
+            <button mat-flat-button class="bg-red custom-btn">Cancel</button>
+          </div>
+        </div>
+        <div fxFlex.sm="30%" fxFlex.md="30%" fxFlex.gt-md="30%" class="search">
+          <mat-card class="bg-grey mb-0" style="margin-bottom: 0px !important;">
+            <div class="text-black txt-center">Preview</div>
+            <mat-card>
+              <div><img class="company-img" src="../assets/img/fidrox.png" alt=""></div>
+              <div class="img-frame"><img class="profile-img" src="../assets/img/employee.png" alt=""></div>
+              <div style="text-align: center;margin-top: 25px;"><span class="empName">HIMESH TIRUPATHI</span></div>
+              <div style="text-align: center;margin-top: 25px;"><span class="empNo">8907654</span></div>
+            </mat-card>
+          </mat-card>
+          <br>
+          <mat-card class="mb-0" style="margin-bottom: 0px !important;">
+          <div><span class="card2">Obverse</span></div>
+          <br>
+          <div class="card2-content">Employee Name<br>Himesh Tirupathi</div>
+          <br>
+          <div class="card2-content">Emp Number<br>8907654</div>
+          <br>
+          <div class="card2-content">
+            <img class="card2-company-img"  src="../assets/img/fidrox.png" alt=""><br>
+            Fidrox Technologies PVT Ltd.,<br>Bangalore
+          </div>
+          </mat-card>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</div>

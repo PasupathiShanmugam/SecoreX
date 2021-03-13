@@ -18,6 +18,7 @@ import { OdcBulkUploadComponent } from './components/odc-admin/odc-bulk-upload/o
 import { OdcReportsComponent } from './components/odc-admin/odc-reports/odc-reports.component';
 import { EmployeeLogsComponent } from './components/super-admin/employee-logs/employee-logs.component';
 import { EmployeeOffBoardComponent } from './components/super-admin/employee-off-board/employee-off-board.component';
+import { EmployeeIdCardRequestComponent } from './components/super-admin/employee-id-card-request/employee-id-card-request.component';
 
 
 const routes: Routes = [
@@ -51,6 +52,7 @@ const routes: Routes = [
       { path: "odc-reports", component: OdcReportsComponent },
       { path: "employee-logs", component: EmployeeLogsComponent },
       { path: "employee-off-board", component: EmployeeOffBoardComponent },
+      { path: "employee-id-card-request", component: EmployeeIdCardRequestComponent }
     ]
   },
 

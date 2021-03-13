@@ -44,6 +44,7 @@ import { OdcReportsComponent } from './components/odc-admin/odc-reports/odc-repo
 import { EmployeeLogsComponent } from './components/super-admin/employee-logs/employee-logs.component';
 import { EmployeeOffBoardComponent } from './components/super-admin/employee-off-board/employee-off-board.component';
 import { EmployeeOffBoardRelieveComponent } from './components/super-admin/employee-off-board-relieve/employee-off-board-relieve.component';
+import { EmployeeIdCardRequestComponent } from './components/super-admin/employee-id-card-request/employee-id-card-request.component';
 
 @NgModule({
   declarations: [
@@ -78,7 +79,8 @@ import { EmployeeOffBoardRelieveComponent } from './components/super-admin/emplo
     OdcReportsComponent,
     EmployeeLogsComponent,
     EmployeeOffBoardComponent,
-    EmployeeOffBoardRelieveComponent
+    EmployeeOffBoardRelieveComponent,
+    EmployeeIdCardRequestComponent
   ],
   imports: [
     BrowserModule,
