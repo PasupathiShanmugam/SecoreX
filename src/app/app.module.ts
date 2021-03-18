@@ -45,6 +45,11 @@ import { EmployeeLogsComponent } from './components/super-admin/employee-logs/em
 import { EmployeeOffBoardComponent } from './components/super-admin/employee-off-board/employee-off-board.component';
 import { EmployeeOffBoardRelieveComponent } from './components/super-admin/employee-off-board-relieve/employee-off-board-relieve.component';
 import { EmployeeIdCardRequestComponent } from './components/super-admin/employee-id-card-request/employee-id-card-request.component';
+import { OdcAdminComponent } from './components/odc-admin/odc-admin.component';
+import { MasterProfileComponent } from './components/master-profile/master-profile.component';
+import { MasterProfileViewModifyComponent } from './components/master-profile/master-profile-view-modify/master-profile-view-modify.component';
+import { MasterProfileReportComponent } from './components/master-profile/master-profile-report/master-profile-report.component';
+import { MasterProfileConfigurationComponent } from './components/master-profile/master-profile-configuration/master-profile-configuration.component';
 
 @NgModule({
   declarations: [
@@ -80,7 +85,12 @@ import { EmployeeIdCardRequestComponent } from './components/super-admin/employe
     EmployeeLogsComponent,
     EmployeeOffBoardComponent,
     EmployeeOffBoardRelieveComponent,
-    EmployeeIdCardRequestComponent
+    EmployeeIdCardRequestComponent,
+    OdcAdminComponent,
+    MasterProfileComponent,
+    MasterProfileViewModifyComponent,
+    MasterProfileReportComponent,
+    MasterProfileConfigurationComponent
   ],
   imports: [
     BrowserModule,

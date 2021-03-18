@@ -1,8 +1,6 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
-import { from } from 'rxjs';
 import { MainLayoutComponent } from './components/main-layout/main-layout.component';
-
 import { IdCardApprovalComponent } from './components/id-card-approval/id-card-approval.component';
 import { LoginComponent } from './components/login/login.component';
 import { DispatchComponent } from './components/dispatch/dispatch.component';
@@ -19,6 +17,11 @@ import { OdcReportsComponent } from './components/odc-admin/odc-reports/odc-repo
 import { EmployeeLogsComponent } from './components/super-admin/employee-logs/employee-logs.component';
 import { EmployeeOffBoardComponent } from './components/super-admin/employee-off-board/employee-off-board.component';
 import { EmployeeIdCardRequestComponent } from './components/super-admin/employee-id-card-request/employee-id-card-request.component';
+import { OdcAdminComponent } from './components/odc-admin/odc-admin.component';
+import { MasterProfileConfigurationComponent } from './components/master-profile/master-profile-configuration/master-profile-configuration.component';
+import { MasterProfileReportComponent } from './components/master-profile/master-profile-report/master-profile-report.component';
+import { MasterProfileViewModifyComponent } from './components/master-profile/master-profile-view-modify/master-profile-view-modify.component';
+import { MasterProfileAddComponent } from './components/master-profile/master-profile-add/master-profile-add.component';
 
 
 const routes: Routes = [
@@ -52,12 +55,15 @@ const routes: Routes = [
       { path: "odc-reports", component: OdcReportsComponent },
       { path: "employee-logs", component: EmployeeLogsComponent },
       { path: "employee-off-board", component: EmployeeOffBoardComponent },
-      { path: "employee-id-card-request", component: EmployeeIdCardRequestComponent }
+      { path: "employee-id-card-request", component: EmployeeIdCardRequestComponent },
+      { path: "master-profile-add", component: MasterProfileAddComponent },
+      { path: "master-profile-view", component: MasterProfileViewModifyComponent },
+      { path: "master-profile-report", component: MasterProfileReportComponent },
+      { path: "master-profile-configuration", component: MasterProfileConfigurationComponent },
+      { path: "odc-admin", component: OdcAdminComponent },
     ]
-  },
-
-  { path: "login", component: LoginComponent },
-
+  }
+  // { path: "login", component: LoginComponent }
 ];
 
 @NgModule({

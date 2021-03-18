@@ -24,17 +24,54 @@
             <b class="caret" [style.color]="normalFontColor"></b>
           </a>
           <div id="component" class="collapse" [id]="[menuItem.id]">
+         
+
+
+
+
+
+
+
             <ul class="nav">
               <li *ngFor="let subItem of menuItem.children" routerLinkActive #subrla="routerLinkActive"
-                [ngClass]="subrla.isActive? 'active' : ''">
-                <a [routerLink]="['./'+subItem.path]"
-                  [style.background-color]="subrla.isActive? 'white' : 'transparent'" [style.color]="subrla.isActive? 
-               'black' : normalFontColor" style="height: 43px;">
-                  <!-- <span style="margin-left: 5px; width: 21px;">{{subItem.icon}}</span> -->
+                [ngClass]="subrla.isActive? (subItem.children === null? 'active' : '') : ''"
+                [routerLinkActiveOptions]="{exact: true}">
+                <a [style.display]="subItem.children === null? 'flex' : 'none'" [routerLink]="[subItem.path]"
+                  [style.background-color]="subrla.isActive? 'red' : 'transparent'"
+                  [style.color]="subrla.isActive? activeFontColor : normalFontColor">
+                  <!-- <mat-icon>{{subItem.icon}}</mat-icon> -->
                   <span>{{subItem.title}}</span>
                 </a>
+                <div [hidden]="subItem.children === null" class="collapse-container">
+                  <a data-toggle="collapse" [href]="[subItem.path]" style="padding: 0 15px;"
+                    [ngClass]="subrla.isActive? 'parent-active' : ''" class="collapse-a collapsed"
+                     [style.color]="normalFontColor">
+                    <!-- <i class="material-icons"></i> -->
+                    <!-- <mat-icon>{{subItem.icon}}</mat-icon> -->
+                    <span>{{subItem.title}}</span>
+                    <b class="caret" [style.color]="normalFontColor"></b>
+                  </a>
+                  <div id="component" class="collapse" [id]="[subItem.id]">
+                    <ul class="nav">
+                      <li *ngFor="let subChildItem of subItem.children" routerLinkActive #subchildrla="routerLinkActive"
+                        [ngClass]="subchildrla.isActive? 'active' : ''">
+                        <a [routerLink]="['./'+subChildItem.path]"
+                          [style.background-color]="subchildrla.isActive? 'white' : 'transparent'" [style.color]="subchildrla.isActive? 
+                       'black' : normalFontColor" style="height: 43px;">
+                          <!-- <span style="margin-left: 5px; width: 21px;">{{subItem.icon}}</span> -->
+                          <span>{{subChildItem.title}}</span>
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
               </li>
             </ul>
+
+
+
+
+
           </div>
         </div>
       </li>
